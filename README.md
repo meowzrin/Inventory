@@ -1,3 +1,11 @@
+Steps to run project:
+1. Go to appsettings.json and change the connection string to "server=(localdb)\\MSSQLLocalDB;database=ProductsDB;Trusted_Connection=true"
+2. In Visual Studio Go to View->Other Windows Package Manager Console
+3. In Package Manager Console - Type Add-Migration initial
+4. Once successful type - Update-Database
+5. Click F5 and set up fiddler with the below endpoints
+
+
 
 
 # Inventory
