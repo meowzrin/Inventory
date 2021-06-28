@@ -14,11 +14,15 @@ namespace Inventory.controller
     {
         private readonly ILogger<InventoryController> _logger;
         private readonly IProductDal _productDal;
-        public InventoryController(IProductDal productBl, ILogger<InventoryController> logger)
+       
+
+        public InventoryController(IProductDal productdal, ILogger<InventoryController> logger)
         {
-            _productDal = productBl;
+            _productDal = productdal;
             _logger = logger;
         }
+
+      
 
         [HttpGet]
         [Route("Inventory/getProducts")]
