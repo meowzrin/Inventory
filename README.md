@@ -1,5 +1,10 @@
 Steps to run project:
-1. Go to appsettings.json and change the connection string to "server=(localdb)\\MSSQLLocalDB;database=ProductsDB;Trusted_Connection=true"
+1. Go to appsettings.json and change the server name in the connection string to "ProductDBConnection": "server=YOUR_SERVERNAME;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;database=ProductDB"
+  },
+  "AllowedHosts": "*"
+
+}
+"
 2. In Visual Studio Go to View->Other Windows Package Manager Console
 3. In Package Manager Console - Type Add-Migration initial
 4. Once successful type - Update-Database
